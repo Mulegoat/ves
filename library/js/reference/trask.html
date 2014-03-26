@@ -1,0 +1,235 @@
+<div id="site-container">
+    <nav id="mobile-menu" ng-controller="MenuController" class="ng-scope">
+      <div class="trigger" ng-click="toggle()">
+        <div class="box"></div>
+      </div>
+      <div class="nav-trask home-btn" rel="home"></div>
+    </nav>
+    <div id="menu" ng-controller="MenuController" ng-include="'modules/menu.html'" class="ng-scope" style="left: 0px;">
+
+<div class="trask-logo menu-item home ng-scope  hover" rel="home" style="left: 0px;">
+	<div class="nav-logo-trask">Trask</div>
+	<div class="hitarea"></div>
+</div>
+
+<ul class="menu ng-scope">
+
+	<!-- ngRepeat: item in list | orderBy:order | filter:{type:'section'} --><li ng-class="{active: location.path() == item.url}" class="menu-item innovation hover" ng-repeat="item in list | orderBy:order | filter:{type:'section'}" rel="innovation" style="left: 0px;">
+		<div class="icon" style="background-image: url(http://www.trask-industries.com/img/sprite_innovation.png); background-position: -980px 0px;"></div>
+		<div class="title ng-binding">innovation</div>
+		<div class="hitarea"></div>
+	</li><li ng-class="{active: location.path() == item.url}" class="menu-item genetics" ng-repeat="item in list | orderBy:order | filter:{type:'section'}" rel="genetics" style="left: 0px;">
+		<div class="icon" style="background-image: url(http://www.trask-industries.com/img/sprite_genetics.png); background-position: 0px 0px;"></div>
+		<div class="title ng-binding">genetics</div>
+		<div class="hitarea"></div>
+	</li><li ng-class="{active: location.path() == item.url}" class="menu-item media active" ng-repeat="item in list | orderBy:order | filter:{type:'section'}" rel="media" style="left: 0px;">
+		<div class="icon" style="background-image: url(http://www.trask-industries.com/img/sprite_media.png); background-position: -980px 0px;"></div>
+		<div class="title ng-binding">media</div>
+		<div class="hitarea"></div>
+	</li><li ng-class="{active: location.path() == item.url}" class="menu-item about" ng-repeat="item in list | orderBy:order | filter:{type:'section'}" rel="about" style="left: 0px;">
+		<div class="icon" style="background-image: url(http://www.trask-industries.com/img/sprite_about.png); background-position: 0px 0px;"></div>
+		<div class="title ng-binding">about</div>
+		<div class="hitarea"></div>
+	</li>
+
+</ul>
+
+<div class="bottom-align ng-scope">
+	<div class="menu-item share" ng-click="share($event)" rel="share" style="left: 0px;">
+		<span>SHARE</span>
+	</div>
+</div>
+</div>
+    <div id="share" class="">
+      <div class="icons">
+
+        <div class="col">
+
+          <div class="fb-like" data-href="http://trask-industries.com" data-layout="box_count" data-send="false" data-width="90" data-show-faces="false"></div>
+
+          <div class="tweet">
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1390956745.html#_=1392047800599&amp;count=vertical&amp;counturl=http%3A%2F%2Fwww.trask-industries.com&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.trask-industries.com%2F%23%2Fhome&amp;size=m&amp;text=Find%20out%20more%20about%20Trask%20Industries%20and%20how%20the%20Sentinel%20program%20is%20stopping%20the%20Mutant%20threat%20%23DOFP%20%23XMen&amp;url=http%3A%2F%2Fwww.trask-industries.com" class="twitter-share-button twitter-tweet-button twitter-count-vertical" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 59px; height: 62px;"></iframe>
+
+            <script type="text/javascript" charset="utf-8">
+              window.twttr = (function (d,s,id) {
+              var t, js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+              js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+              return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+              }(document, "script", "twitter-wjs"));
+            </script>
+          </div>
+
+          <div class="gp">
+            <div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 60px; height: 60px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 60px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I0_1392047800656" name="I0_1392047800656" src="https://apis.google.com/_/+1/sharebutton?plusShare=true&amp;usegapi=1&amp;bsv=o&amp;action=share&amp;annotation=vertical-bubble&amp;height=60&amp;origin=http%3A%2F%2Fwww.trask-industries.com&amp;url=http%3A%2F%2Fwww.trask-industries.com%2F%23%2Fhome&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.XRY3JMZg4gk.O%2Fm%3D__features__%2Fam%3DIQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAItRSTPoMDNZYsbhLrpsdslX9ONNmyeJqw#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1392047800656&amp;parent=http%3A%2F%2Fwww.trask-industries.com&amp;pfname=&amp;rpctoken=21370666" data-gapiattached="true" title="+Share"></iframe></div>
+          </div>
+
+        </div>
+
+        <div class="col col-like">
+
+          <div class="nav-fb-like social_ob">
+            <a href="https://www.facebook.com/xmenmovies" target="_blank"></a>
+          </div>
+          <div class="nav-twitter-follow social_ob">
+            <a href="http://twitter.com/xmenmovies" target="_blank"></a>
+          </div>
+          <div class="nav-yt-join social_ob">
+            <a href="http://youtube.com/xmenmovies" target="_blank"></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="container" class="ng-view"><div id="media" class="window ng-scope">
+		<div id="media_spacer">
+			<div id="masonry" style="position: relative; height: 1314px;">
+
+				<!-- ngRepeat: item in list | orderBy:order -->
+				<div ng-repeat="item in list | orderBy:order" ng-switch="" on="item.content_type" class="item large" id="item_0" style="position: absolute; left: 0px; top: 0px; width: 876px; visibility: visible; display: block; opacity: 1;">
+
+					<div ng-switch-when="video" class="content marquee__0 video">
+						<div class="video-block" rel="92YBR9gEyYI">
+							<img class="videoscreen" ng-src="uploads/media/Image1_Thumb.jpg" src="uploads/media/Image1_Thumb.jpg">
+							<div class="yt_container" id="ytplayer_0"></div>
+							<div class="colorfill"></div>
+							<div class="item_copy">
+								<h2 class="ng-binding">Trask Industries: Your Future</h2>
+								<p class="copy_body ng-binding">Join Trask Industries as we celebrate 50 years of the Sentinel program and look forward to an even brighter future.</p>
+								<p class="copy_media ng-binding"><strong>Media:</strong> SM1_DOM_COMMS</p>
+							</div>
+							<div class="media_cta media_play">
+								<div class="icon-media_play"></div>
+							</div>
+						</div>
+						<div class="hitarea"></div>
+					</div>
+				</div>
+				<div ng-repeat="item in list | orderBy:order" ng-switch="" on="item.content_type" class="item small" id="item_1" style="position: absolute; left: 876px; top: 0px; width: 438px; visibility: visible; display: block; opacity: 1;">
+
+						<!-- ngSwitchWhen: image -->
+
+						<!-- ngSwitchWhen: video -->
+
+				<div ng-switch-when="image" class="content marquee__1 image" rel="uploads/media/Image2_Full.jpg" data-zoom="true">
+							<img ng-src="uploads/media/Image2_Thumb.jpg" src="uploads/media/Image2_Thumb.jpg">
+							<div class="colorfill"></div>
+							<div class="item_copy">
+								<h2 class="ng-binding">A New Era in Defense Technology</h2>
+								<p class="copy_body ng-binding">1973 marked the launch of the Sentinel Mark I supported by a highly celebrated public relations campaign.</p>
+								<p class="copy_media ng-binding"><strong>Media:</strong> SM3_Consumer_Comms</p>
+								<p ng-show="item.content.copy.credit" class="copy_credit ng-binding" style="display: none;"><strong>Credit:</strong> </p>
+							</div>
+							<div class="media_cta image_enlarge" ng-show="item.content.zoom">
+								<div class="icon-media_lightbox"></div>
+							</div>
+							<div class="hitarea"></div>
+						</div>
+					</div>
+						<div ng-repeat="item in list | orderBy:order" ng-switch="" on="item.content_type" class="item small" id="item_2" style="position: absolute; left: 1314px; top: 0px; width: 438px; visibility: visible; display: block; opacity: 1;">
+
+						<!-- ngSwitchWhen: image -->
+
+						<!-- ngSwitchWhen: video -->
+
+						<div ng-switch-when="image" class="content marquee__2 image" rel="uploads/media/ImageTemp_Thumb.jpg" data-zoom="false">
+							<img ng-src="uploads/media/ImageTemp_Thumb.jpg" src="uploads/media/ImageTemp_Thumb.jpg">
+							<div class="colorfill"></div>
+							<div class="item_copy">
+								<h2 class="ng-binding"></h2>
+								<p class="copy_body ng-binding"></p>
+								<p class="copy_media ng-binding"><strong>Media:</strong> SM4_CLASSIFIED</p>
+								<p ng-show="item.content.copy.credit" class="copy_credit ng-binding" style="display: none;"><strong>Credit:</strong> </p>
+							</div>
+							<div class="media_cta image_enlarge" ng-show="item.content.zoom" style="display: none;">
+								<div class="icon-media_lightbox"></div>
+							</div>
+							<div class="hitarea"></div>
+						</div>
+					</div>
+					<div ng-repeat="item in list | orderBy:order" ng-switch="" on="item.content_type" class="item large" id="item_3" style="position: absolute; left: 876px; top: 438px; width: 876px; visibility: visible; display: block; opacity: 1;">
+
+						<!-- ngSwitchWhen: image -->
+
+						<!-- ngSwitchWhen: video -->
+
+						<div ng-switch-when="image" class="content marquee__3 image" rel="uploads/media/Image4_Full.jpg" data-zoom="true">
+							<img ng-src="uploads/media/Image4_Thumb.jpg" src="uploads/media/Image4_Thumb.jpg">
+							<div class="colorfill"></div>
+							<div class="item_copy">
+								<h2 class="ng-binding">Ensuring Peace in Troubling Times</h2>
+								<p class="copy_body ng-binding">Sentinels are capable of mobilizing in response to international turmoil at a moment’s notice.</p>
+								<p class="copy_media ng-binding"><strong>Media:</strong> SM2_INTER_COMMS</p>
+								<p ng-show="item.content.copy.credit" class="copy_credit ng-binding"><strong>Credit:</strong> J. Narrin</p>
+							</div>
+							<div class="media_cta image_enlarge" ng-show="item.content.zoom">
+								<div class="icon-media_lightbox"></div>
+							</div>
+							<div class="hitarea"></div>
+						</div>
+					</div>
+						<div ng-repeat="item in list | orderBy:order" ng-switch="" on="item.content_type" class="item small" id="item_4" style="position: absolute; left: 0px; top: 876px; width: 438px; visibility: visible; display: block; opacity: 1;">
+
+							<!-- ngSwitchWhen: image -->
+
+							<!-- ngSwitchWhen: video -->
+
+							<div ng-switch-when="image" class="content marquee__4 image" rel="uploads/media/Image5_Full.jpg" data-zoom="true">
+								<img ng-src="uploads/media/Image5_Thumb.jpg" src="uploads/media/Image5_Thumb.jpg">
+								<div class="colorfill"></div>
+								<div class="item_copy">
+									<h2 class="ng-binding">International Defense</h2>
+									<p class="copy_body ng-binding">The 1980s marked the international deployment of Mark I Sentinels in major cities across the globe including London, Berlin, Stockholm, Seoul, Saint Petersburg and Beijing.</p>
+									<p class="copy_media ng-binding"><strong>Media:</strong> SM3_Consumer_Comms</p>
+									<p ng-show="item.content.copy.credit" class="copy_credit ng-binding" style="display: none;"><strong>Credit:</strong> </p>
+								</div>
+								<div class="media_cta image_enlarge" ng-show="item.content.zoom">
+									<div class="icon-media_lightbox"></div>
+								</div>
+								<div class="hitarea"></div>
+							</div>
+						</div>
+						<div ng-repeat="item in list | orderBy:order" ng-switch="" on="item.content_type" class="item small" id="item_5" style="position: absolute; left: 438px; top: 876px; width: 438px; visibility: visible; display: block; opacity: 1;">
+
+						<!-- ngSwitchWhen: image -->
+
+						<!-- ngSwitchWhen: video -->
+
+					<div ng-switch-when="image" class="content marquee__5 image" rel="uploads/media/ImageTemp_Thumb.jpg" data-zoom="false">
+						<img ng-src="uploads/media/ImageTemp_Thumb.jpg" src="uploads/media/ImageTemp_Thumb.jpg">
+						<div class="colorfill"></div>
+						<div class="item_copy">
+							<h2 class="ng-binding"></h2>
+							<p class="copy_body ng-binding"></p>
+							<p class="copy_media ng-binding"><strong>Media:</strong> SM4_CLASSIFIED</p>
+							<p ng-show="item.content.copy.credit" class="copy_credit ng-binding" style="display: none;"><strong>Credit:</strong> </p>
+						</div>
+						<div class="media_cta image_enlarge" ng-show="item.content.zoom" style="display: none;">
+							<div class="icon-media_lightbox"></div>
+						</div>
+						<div class="hitarea"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="legal" class="">
+		      <div class="legal-media">
+		        <div id="legal_graphics">
+		          <div id="rating">THIS FILM IS NOT YET RATED</div>
+		          <div id="rating_info">
+		            FOR RATINGS REASONS GO TO
+		            <a href="http://www.filmratings.com/" target="_blank">FILMRATINGS.COM</a>,
+		            <a href="http://mpaa.org/" target="_blank">MPAA.ORG</a>
+		          </div>
+		          <img class="legal_logo" src="img/marvel_fox.png">
+		        </div>
+		        <p>™ and © 2013 Twentieth Century Fox Film Corporation. All rights reserved. Property of Fox. Use of this website (including any and all parts and components) constitutes your acceptance of these <a style="text-decoration:underline !important;" target="_blank" href="http://www.foxprivacy.com/us/terms.html">NEW Terms and Conditions</a> and <a style="text-decoration:underline !important;" target="_blank" href="http://www.foxprivacy.com/us/privacy.html">New Privacy Policy</a> (<a style="text-decoration:underline !important;" target="_blank" href="http://www.foxprivacy.com/us/privacy_changed.html">What's Changed?</a>). The materials on this website are not to be sold, traded or given away. Any copying, manipulation, publishing, or other transfer of these materials, except as specifically provided in the terms and conditions of use, is strictly prohibited.</p>
+		      </div>
+		    </div>
+		</div>
+	</div>
+</div>
+</div>

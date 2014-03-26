@@ -1,0 +1,133 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Footer Module Stylesheet
+
+******************************************************************/
+
+	.footer {
+	}
+	.inner-footer{
+		padding:$padding /2;
+	}
+
+	.footer-links{
+		width: 50%;
+		padding:$padding;
+		float: left;
+	}
+
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+
+	.pre-footer {
+		float: left;
+		width: 100%;
+		position: relative;
+
+		.menu {
+			font-size:90%;
+		}
+
+	} /* end .footer-links */
+
+	.menu-item{
+		a{
+			color: $white;
+		}
+	}
+
+	.social-links{
+		padding:$padding /2;
+		margin:0 auto;
+		display: block;
+		float: none;
+		text-align: center !important;
+
+		.social-links__item{
+			list-style:none;
+			display: inline-block;
+			height: 40px;
+			margin:0px 10px 0 0;
+			font-size: 26px;
+
+
+			.social-links__item__icon{
+				color:$bones-grey;
+				width:40px;
+				background: none;
+				display:inline-block;
+				line-height:40px !important;
+				text-align: center;
+				font-weight:300;
+
+				&:hover {
+					background:$bones-grey;
+					color: white;
+					font-weight: 300;
+				}
+			}
+		}
+
+	}
+
+	.riba-link{
+		width:200px;
+		display:block;
+		margin:0 auto;
+	}
+
+	.riba-img{
+		display: block;
+		margin:0 auto;
+	}
+	.riba-logo{
+		margin:0 auto;
+		padding-top:$padding*2;
+		display: block;
+		font-size: 90%;
+		font-weight: 100;
+	}
+
+	.copyright {
+		font-weight: 100;
+		font-size:0.8em;
+		text-shadow:none;
+		text-align:center;
+		margin:0 !important;
+	}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	.footer{
+		margin-top:0em;
+	}
+	.inner-footer{
+		padding:$padding /4;
+	}
+
+	.social-links{
+		padding:0;
+	}
+	.footer-links {
+		width:25%;
+		font-weight: 100;
+	}
+	.riba-logo{
+		padding-top:$padding/2;
+
+	}
+
+}
+

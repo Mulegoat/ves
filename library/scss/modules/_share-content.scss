@@ -1,0 +1,102 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Share Content Module Stylesheet
+
+******************************************************************/
+.shareContent{
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: $margin;
+}
+#ssba{
+	font-family: 'icomoon' !important;
+	padding:0 !important;
+}
+
+#ssba a{
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	width:46px !important;
+	height: 46px !important;
+	background:none !important;
+	color: $bones-grey !important;
+	font-size: 18px !important;
+	line-height:40px;
+	padding:0px !important;
+	margin-right:20px;
+
+	&:hover,&:focus{
+		color:black !important;
+		background: none !important;
+	}
+
+	img{
+		display: none;
+	}
+}
+#ssba_email_share:before{
+	content: "\e0ec";
+}
+#ssba_facebook_share:before{
+	content: "\e609";
+}
+#ssba_twitter_share:before{
+	content: "\e604";
+}
+#ssba_pinterest_share:before{
+	content: "\e608";
+}
+#ssba_google_share:before{
+	content: "\e607";
+}
+#ssba_linkedin_share:before{
+	content: "\e605";
+}
+
+@media only screen and (min-width: 481px) {
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	#ssba a{
+		width:46px !important;
+		height: 46px !important;
+		font-size: 20px !important;
+		line-height:46px;
+	}
+
+}
+
+@media only screen and (min-width: 1240px) {
+
+	#ssba a{
+		width:46px !important;
+		height: 46px !important;
+		font-size: 26px !important;
+		line-height:46px;
+	}
+
+}
+
+@media only screen and (min-width: 1800px) {
+
+	#ssba a{
+		width:46px !important;
+		height: 46px !important;
+		font-size: 26px !important;
+		line-height:46px;
+	}
+}

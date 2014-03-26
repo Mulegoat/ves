@@ -1,0 +1,82 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Box Theme Module Stylesheet
+
+******************************************************************/
+
+.box--theme1{
+	background:lighten($bones-light-grey, 5%);
+	//color: white;
+	height: 100%;
+
+	.header-link{
+		color:black !important;
+	}
+
+}
+.box--theme2{
+	background:darken($bones-grey, 10%);
+	color: white;
+	height: 100%;
+
+	.header-link{
+		color:white !important;
+	}
+}
+.box--theme3{
+	background:white;
+	color: $black;
+	height: 100%;
+
+	.header-link{
+		color:black !important;
+	}
+}
+.box--theme3__listItem{
+	font-weight: 100;
+	list-style: disc;
+	margin-left: $margin;
+	font-size:90%;
+}
+.box--theme4{
+	background:$bones-orange;
+	color: white;
+	height: 100%;
+
+	.header-link{
+		color:white;
+	}
+
+}
+.box--theme5{
+	background:$black;
+	color: white;
+	height: 100%;
+
+	.header-link{
+		color: white;
+	}
+}
+.box--theme6{
+	background:$black;
+	@include background-opacity($black, 0.55);
+	color: white;
+
+	.header-link{
+		color: white;
+	}
+}
+.box--theme7{
+	background:white;
+	@include background-opacity(white, 0.85);
+	color: $black;
+
+	.header-link{
+		color:black;
+		&:hover,&:focus{
+			color: $black;
+		}
+	}
+}

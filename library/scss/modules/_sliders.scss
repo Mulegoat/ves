@@ -1,0 +1,250 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Image Slider Module Stylesheet
+
+******************************************************************/
+/******************************
+*
+*  RoyalSlider Default Skin
+*
+*    1. Arrows
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*
+*  Sprite: 'rs-custom-png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+*
+******************************/
+
+
+/* Background */
+.myCustomSkin,
+.myCustomSkin .rsOverflow,
+.myCustomSkin .rsSlide,
+.myCustomSkin .rsVideoFrameHolder,
+.myCustomSkin .rsThumbs {
+	background: white;
+	color: white;
+}
+
+.myCustomSkin{
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+
+}
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+.myCustomSkin .rsArrow {
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+
+.mobile-only-content{
+	display:block;
+	padding:0;
+	float:left;
+}
+
+.myCustomSkin .rsArrow {
+	height: 100%;
+	width: 32px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+	text-align: center;
+}
+.myCustomSkin.rsVer .rsArrow {
+	width: 100%;
+	height: 32px;
+
+}
+.myCustomSkin.rsVer .rsArrowLeft {
+	top: 0;
+	left: 0;
+}
+.myCustomSkin.rsVer .rsArrowRight {
+	bottom: 0;
+	left: 0;
+}
+
+.myCustomSkin.rsHor .rsArrowLeft {
+	left: 0;
+	top: 0;
+}
+.myCustomSkin.rsHor .rsArrowRight {
+	right: 0;
+	top:0;
+}
+.myCustomSkin .rsArrowIcn {
+	width: 32px;
+	height: 32px;
+	top: 50%;
+	left: 50%;
+	margin-top:-16px;
+	margin-left: -16px;
+	font-size:24px;
+	line-height:32px;
+	position: absolute;
+	cursor: pointer;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+}
+
+
+.myCustomSkin .rsArrowDisabled .rsArrowIcn {
+	opacity: .2;
+	filter: alpha(opacity=20);  *display: none;
+}
+
+
+
+.myCustomSkin .rsArrowIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+.myCustomSkin.rsHor .rsArrowLeft .rsArrowIcn:before {
+	content: "\e601";
+ }
+.myCustomSkin.rsHor .rsArrowRight .rsArrowIcn:before {
+	content: "\e600";
+ }
+
+.myCustomSkin.rsVer .rsArrowLeft .rsArrowIcn:before {
+	content: "\e601";
+ }
+.myCustomSkin.rsVer .rsArrowRight .rsArrowIcn:before {
+	content: "\e600";
+ }
+}
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.myCustomSkin .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../preloaders/preloader-black.gif);
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;
+}
+
+
+
+/***************
+*
+* Arrows
+*
+****************/
+
+
+
+/***************
+ Fullscreen button
+****************/
+
+.myCustomSkin .rsFullscreenBtn {
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	z-index: 22;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+
+}
+.myCustomSkin .rsFullscreenIcn {
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size:22px;
+	line-height:50px;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+	text-align: center;
+}
+.myCustomSkin .rsFullscreenIcn:before {
+	content: "\e1bf";
+}
+.myCustomSkin .rsFullscreenIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+.myCustomSkin.rsFullscreen .rsFullscreenIcn:before {
+}
+
+.myCustomSkin .rsTmb {
+	display: none;
+}
+
+/*********************
+NEARBY SLIDES
+*********************/
+.visibleNearbyZoom .rsSlide img {
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+
+@media only screen and (min-width: 1240px) {
+
+	.myCustomSkin .rsArrow {
+		height: 100%;
+		width: 76px;
+		position: absolute;
+		display: block;
+		cursor: pointer;
+		z-index: 21;
+	}
+	.myCustomSkin.rsVer .rsArrow {
+		width: 100%;
+		height: 76px;
+
+	}
+
+	.myCustomSkin .rsArrowIcn {
+		width: 76px;
+		height: 76px;
+		top: 50%;
+		left: 50%;
+		margin-top:-38px;
+		margin-left: -38px;
+		font-size:48px;
+		line-height:76px;
+	}
+
+}

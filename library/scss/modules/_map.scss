@@ -1,0 +1,89 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Map Module Stylesheet
+
+******************************************************************/
+
+.leaflet-popup-content-wrapper {
+	@include border-radius(0px 0px 0 0 !important);
+}
+.leaflet-container a {
+	color: $bones-light-grey !important;
+	border: none;
+}
+
+.address-container{
+	float: left;
+	padding:2em;
+	width:100%;
+	height: auto;
+
+	.h2{
+		font-weight:300;
+	}
+}
+
+.company-info{
+	margin:0 !important;
+	padding-left:$padding*2;
+}
+
+.company-info__item{
+	float: left;
+	width: 90%;
+	list-style: none;
+	margin:$margin $margin/4;
+	color: black;
+
+
+	a{
+		color: black;
+		&:hover, &:focus{
+			color:$link-color;
+			text-decoration: underline;
+		}
+	}
+
+}
+.company-info__item--address{
+	float: left;
+	margin-left:1.5em;
+	color:$bones-grey;
+	display: block;
+	width: 100%;
+	font-weight: 100;
+}
+.company-info__icon{
+	float: left;
+	margin-right: $margin/4;
+	color: $link-color;
+}
+
+
+@media only screen and (min-width: 1240px) {
+
+
+	.address-container{
+		position:absolute;
+		bottom:100px;
+		z-index:9999;
+		left:100px;
+		width:500px;
+		height: auto;
+		@include box-shadow(0 3px 30px rgba(0,0,0,0.4));
+
+		.h2{
+			font-weight:300;
+		}
+	}
+
+	.company-info__item{
+
+		margin:$margin $margin/4;
+		font-size:80%;
+
+	}
+
+}

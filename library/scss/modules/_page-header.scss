@@ -1,0 +1,41 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Page Header Module Stylesheet
+
+******************************************************************/
+
+
+.page__header{
+	width:auto;
+	max-width: 260px;
+	padding:1em;
+}
+
+@media only screen and (min-width: 481px) {
+	.page__header{
+		width:57%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.page__header{
+		max-width: 240px;
+	}
+
+}
+@media only screen and (min-width: 1030px) {
+
+
+}
+@media only screen and (min-width: 1240px) {
+	.page__header{
+		max-width: 290px;
+	}
+}
+@media only screen and (min-width: 1800px) {
+	.page__header{
+	}
+}

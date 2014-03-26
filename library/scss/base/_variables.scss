@@ -1,0 +1,40 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Variables Stylesheet
+
+******************************************************************/
+
+/*********************
+COLOR VARS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$black:             #000;
+$white:             #fafafb;
+
+$bones-light-grey:	#cccccc;
+$bones-grey:		#555555;
+$bones-orange:      #ff4f00;
+
+$link-color:        $bones-orange;
+$link-hover:        darken($link-color, 9%);
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+
+/*********************
+GLOBAL LAYOUT VARS
+*********************/
+$margin: 2em;
+$padding: 2%;

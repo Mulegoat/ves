@@ -1,0 +1,235 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Project List Module Stylesheet
+
+******************************************************************/
+
+
+	.box-container{
+		$zen-column-count: 12;
+		$zen-gutter-width: 0px;
+		@include zen-grid-container;
+	}
+
+
+		.box{
+			width:100%;
+			float: left;
+			height: auto;
+			margin-bottom: 0.5em;
+		}
+
+		.box__thumb{
+			position: relative;
+
+			.wp-post-image {
+				width: 100%;
+				height:auto;
+				border:none;
+			}
+		}
+
+		.h2{
+			margin:0 0 $margin /4;
+
+			a{
+				font-weight:100;
+			}
+		}
+
+		.box__body{
+			float: left;
+			width:100%;
+		}
+
+
+
+		.box__details{
+			margin:0;
+
+			.box__detail{
+				float: left;
+				width:100%;
+				margin:0 0 $margin /4 0;
+
+				.box__detail--q{
+					float: left;
+					width:100%;
+					font-weight: 300;
+				}
+				.box__detail--a{
+					//color:$bones-light-grey;
+					float: left;
+					width: 100%;
+					font-size:90%;
+				}
+			}
+
+		}
+
+		.box__detail--brief{
+			display: none;
+		}
+		.box__detail--location{
+			display: none;
+		}
+
+		.box__footer{
+			width:100%;
+			float:left;
+			margin:$margin/2 0;
+		}
+
+@media only screen and (min-width: 768px) {
+
+	.box{
+		margin-bottom: 0;
+	}
+
+	.box__thumb{
+		.box__thumb--bw{
+			position: relative;
+			display: block;
+		}
+		.wp-post-image{
+			position: static;
+			display: block;
+		}
+
+	}
+
+
+	.box-container{
+		display: block;
+
+		.box{
+			width:100%;
+			margin: 0;
+		}
+
+		.box__thumb{
+			width:66.6667%;
+
+			a{
+				opacity:0;
+				filter:alpha(opacity=0);
+			}
+		}
+		.box__body{
+			width:33.333%;
+
+			.box__content{
+				font-size:100%;
+			}
+		}
+	}
+
+	.odd{
+		margin:0;
+
+		.box{
+			float:left;
+
+			.box__thumb{
+				float: left;
+			}
+
+			.box__body{
+				float:right;
+
+				.box__header{
+					width:100%;
+					float:left;
+				}
+
+				.box__content{
+					width:100%;
+					float:left;
+				}
+
+				.box__footer{
+					width:100%;
+					float:left;
+				}
+			}
+		}
+	}
+
+	.even{
+		margin:0;
+
+		.box{
+			float:right;
+
+			.box__thumb{
+				float: right;
+			}
+
+
+			.box__header{
+				width:100%;
+				float:left;
+			}
+
+			.box__content{
+				width:100%;
+				float:left;
+			}
+
+			.box__footer{
+				width:100%;
+				float:left;
+				margin:0
+			}
+
+		}
+	}
+
+
+}
+
+@media only screen and (min-width: 1030px) {
+
+	.box-container{
+
+		.even{
+
+			.box{
+				float: right;
+			}
+
+		}
+
+		.box{
+			@include zen-grid-item(9, 1);
+			margin: 0;
+		}
+
+	}
+
+}
+
+@media only screen and (min-width: 1240px) {
+
+	.box-container{
+
+		.box__detail--brief{
+			display: block;
+		}
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	.box-container{
+
+		.box__detail{
+			margin:0 0 $margin /2 0;
+		}
+
+		.box__detail--location{
+			display: block;
+		}
+	}
+}

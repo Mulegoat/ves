@@ -1,0 +1,93 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Header Module Stylesheet
+
+******************************************************************/
+
+
+.header {
+	background:white;
+}
+
+
+	.menu-trigger{
+		background:$link-color;
+		display: block;
+		width:50px;
+		height: 50px;
+		line-height: 50px;
+		float:right;
+		text-align: center;
+
+		a{
+			color:white;
+			font-size:25px;
+			display: block;
+			width: 50px;
+			height: 50px;
+			line-height:50px;
+		}
+	}
+
+.header__logo{
+	display: block;
+	float: left;
+	margin:$margin/2 0;
+
+		a{
+			height:67px;
+			width:160px;
+			display: block;
+			background:url('../images/x2/logo_320up.svg') no-repeat;
+			float: none;
+		}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.header__logo{
+		height:100px;
+		width:240px;
+		margin:$margin 0;
+
+		a{
+			height:100px;
+			width:240px;
+			background:url('../images/logo_small.png') no-repeat;
+		}
+	}
+}
+
+@media only screen and (min-width: 1240px) {
+
+	.header__logo{
+		height:123px;
+		width:340px;
+		a{
+			height:123px;
+			width:300px;
+			display: block;
+			background:url('../images/logo.png') no-repeat;
+			float: left;
+		}
+	}
+
+	.menu-trigger{
+		height:80px;
+		width: 80px;
+
+		a{
+			line-height: 80px;
+			height: 80px;
+			width:80px;
+
+			&:hover,&:focus{
+				background:darken($link-color, 15%);
+				color: white;
+			}
+		}
+	}
+
+}

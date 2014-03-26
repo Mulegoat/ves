@@ -1,0 +1,106 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Project Module Stylesheet
+
+******************************************************************/
+
+.box-container--project{
+  $zen-column-count: 4;
+  $zen-gutter-width: 0px;
+  @include zen-grid-container;
+}
+
+.project__row{
+	@include zen-clear(both);
+}
+
+	.project__row__p{
+		margin-top:0;
+	}
+
+.page-title{
+	margin-top: 0;
+}
+
+.project__portrait-img{
+	display:none;
+}
+
+.project__summary{
+	min-width: 300px;
+}
+	.project__slider{
+		width: 100%;
+		overflow: hidden;
+	}
+
+
+@media only screen and (min-width: 768px) {
+
+	.page-template-page-project-php{
+
+		.wrap{
+			width:100%;
+		}
+		.header{
+			padding:0 2%;
+
+		}
+
+	}
+	.page-template-page-project-test-php{
+
+		.wrap{
+			width:100%;
+		}
+		.header{
+			padding:0 2%;
+
+		}
+
+	}
+	.project__slider{
+		//padding:0.5em 0.5em 0 0.5em;
+	}
+
+
+	.project__portrait-img{
+		display:block;
+		//@include zen-grid-item(5, 8);
+
+	}
+}
+@media only screen and (min-width: 1240px) {
+
+
+	.project__row{
+		height:435px;
+		clear: none;
+		overflow: hidden;
+	}
+
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+	.project__row{
+		height:505px;
+	}
+}
+@media only screen and (min-width: 1600px) {
+
+	.project__row{
+		height:560px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+
+	.project__row{
+		height:675px;
+	}
+}

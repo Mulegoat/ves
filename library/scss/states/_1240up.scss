@@ -1,0 +1,43 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+
+
+/*********************
+MENU OPEN STATE
+*********************/
+
+.mm-opened{
+	.mm-page{
+		@include filter( brightness(75%));
+		@include transition (brightness 0.2s ease-in-out);
+	}
+}
+.mm-page{
+	@include filter( brightness(100%));
+	@include transition (brightness 0.2s ease-in-out);
+}
+
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+html,body{
+	height: 100%;
+}
+
+.wrap {
+	max-width: 2000px;
+}
+
+.island{
+	position: relative;
+}

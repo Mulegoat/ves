@@ -1,0 +1,122 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+Stylesheet: Global FOrms Styles
+
+When handling retina screens you need to make adjustments, especially
+if you're not using font icons. Here you can add them in one neat
+place.
+
+******************************************************************/
+
+/*********************
+FORM STYLES
+*********************/
+
+#gform_1{
+	padding:$padding $padding *4;
+	margin-bottom: 2em;
+}
+
+.gform_wrapper{
+	max-width: 100%;
+}
+.ginput_container{}
+
+.gform_wrapper .top_label .gfield_label {
+	font-weight: 300 !important;
+}
+
+.gform_wrapper .gfield_required {
+	color: $bones-orange !important;
+	margin-left: 4px;
+}
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type="submit"] {
+	font-size: 100%;
+	@include border-radius(0 0 0 0);
+	font-weight:100;
+	font-family:$sans-serif;
+}
+
+.gform_wrapper input[type="text"], .gform_wrapper input[type="url"], .gform_wrapper input[type="email"], .gform_wrapper input[type="tel"], .gform_wrapper input[type="number"], .gform_wrapper input[type="password"]{
+	outline-style: none;
+	font-size:100% !important;
+	font-family: inherit;
+	padding: $padding/4 !important;
+	letter-spacing: normal;
+	background:$bones-light-grey;
+	border:none;
+}
+
+.gform_wrapper textarea {
+	font-size: 100% !important;
+	background: $bones-light-grey;
+	border:none;
+	padding:$padding/2;
+	min-height:107px;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+	.gform_wrapper ul li.gfield {
+		width:49%;
+		float: left;
+	}
+
+	.gform_wrapper ul li#field_1_4 {
+		width:41%;
+		max-width:740px;
+		float: left;
+		position: absolute;
+		left:51%;
+	}
+}
+@media only screen and (min-width: 1240px) {
+
+
+	// setting up defaults
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	select,
+	textarea,
+	.field {
+	  display: block;
+	  color: black;
+	  vertical-align: middle;
+	  box-shadow: none;
+	  border: 0;
+	  @include transition(background-color 0.24s ease-in-out);
+
+	  // a focused input (or hovered on)
+	  &:focus,
+	  &:active {
+	    background-color: lighten($bones-light-grey, 15%);
+	  } // end hover or focus
+
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+
+	.gform_wrapper textarea {
+		min-height:187px;
+	}
+
+
+}

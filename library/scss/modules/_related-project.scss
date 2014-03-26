@@ -1,0 +1,168 @@
+/******************************************************************
+Site Name: van Ellen Sheryn
+Author: Marco Terrinoni (MULARAM)
+
+
+Stylesheet: Related Project Module Stylesheet
+
+******************************************************************/
+.large{
+	float: left;
+	height:auto;
+	overflow:hidden;
+	width:100%;
+	margin:0;
+}
+
+.large__article{
+	font-size:100%;
+	font-weight:100;
+}
+
+.large-content{
+	margin: $margin 0 !important;
+}
+.large-content__h3{
+	width:50%;
+	padding:$padding;
+}
+
+.large__article__body{
+	width:100%;
+	float: left;
+	position:relative;
+	padding:1em
+}
+
+.large__article__thumb{
+	float: left;
+	position:relative;
+}
+.large__article__header{
+	margin:0;
+}
+.large__article__excerpt{
+	display:none;
+}
+.button--large__article{
+	margin-top:0;
+}
+
+.wp-post-image{
+	margin: 0;
+	width: 100%;
+	height: auto;
+	position: static;
+	display: block;
+}
+
+.large-content__h3{
+	width:100%;
+}
+
+.media_cta {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 52px;
+	height: 52px;
+	line-height:32px;
+}
+
+@media only screen and (min-width: 481px) {
+
+	.large__article__body{
+		position:absolute;
+		width:auto;
+		max-width:366px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+		.large-content{
+			margin:0 !important;
+		}
+
+
+
+
+		.large{
+			width:100%;
+			margin:0;
+			padding:0;
+
+			.even{
+				padding-right: 0;
+
+				.large__article__body{
+				}
+			}
+			.odd{
+				padding-left: 0;
+
+				.large__article__body{
+					right:0;
+				}
+			}
+		}
+
+		.large__article__thumb{
+			width:100%;
+		}
+		.large__article__body{
+			width:50%;
+			max-width:475px;
+			padding:2.5em;
+		}
+		.large__article__excerpt{
+			display:block;
+		}
+
+		.box__copy{
+			width:50% !important;
+			height:50%;
+			bottom:0;
+		}
+
+}
+@media only screen and (min-width: 1030px) {
+
+	.large{
+		display:block;
+		font-size:90%;
+	}
+
+}
+
+@media only screen and (min-width: 1240px) {
+
+	.large{
+		width:50%;
+	}
+
+	.large-content__h3{
+		width:50% !important;
+		float: left;
+	}
+
+
+
+}
+
+@media only screen and (min-width: 1800px) {
+
+	.large{
+		margin:0;
+		padding:0;
+
+		.even{
+			padding-right: 0;
+		}
+		.odd{
+			padding-left: 0;
+		}
+	}
+}
+
+
