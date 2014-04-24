@@ -78,6 +78,17 @@ LAYOUT & GRID STYLES
 POSTS & CONTENT STYLES
 *********************/
 
+.l-single-column{
+  max-width:700px;
+  margin:0 auto;
+
+  img{
+    display: block;
+    width:100%;
+    height: auto;
+    margin-bottom: $margin;
+  }
+}
 
 .l-block-d{
   display: none;

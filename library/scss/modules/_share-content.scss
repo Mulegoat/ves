@@ -11,12 +11,19 @@ Stylesheet: Share Content Module Stylesheet
 	width: 100%;
 	margin-bottom: $margin;
 }
-#ssba{
+.ssba{
 	font-family: 'icomoon' !important;
 	padding:0 !important;
+
+	img{
+		display: none !important;
+	}
+	img.ssba{
+		display:none !important;
+	}
 }
 
-#ssba a{
+.ssba a{
 	font-family: 'icomoon' !important;
 	speak: none;
 	font-style: normal;
@@ -41,26 +48,24 @@ Stylesheet: Share Content Module Stylesheet
 		background: none !important;
 	}
 
-	img{
-		display: none;
-	}
+
 }
-#ssba_email_share:before{
+.ssba_email_share:before{
 	content: "\e0ec";
 }
-#ssba_facebook_share:before{
+.ssba_facebook_share:before{
 	content: "\e609";
 }
-#ssba_twitter_share:before{
+.ssba_twitter_share:before{
 	content: "\e604";
 }
-#ssba_pinterest_share:before{
+.ssba_pinterest_share:before{
 	content: "\e608";
 }
-#ssba_google_share:before{
+.ssba_google_share:before{
 	content: "\e607";
 }
-#ssba_linkedin_share:before{
+.ssba_linkedin_share:before{
 	content: "\e605";
 }
 
@@ -71,7 +76,7 @@ Stylesheet: Share Content Module Stylesheet
 
 @media only screen and (min-width: 768px) {
 
-	#ssba a{
+	.ssba a{
 		width:46px !important;
 		height: 46px !important;
 		font-size: 20px !important;
@@ -82,7 +87,7 @@ Stylesheet: Share Content Module Stylesheet
 
 @media only screen and (min-width: 1240px) {
 
-	#ssba a{
+	.ssba a{
 		width:46px !important;
 		height: 46px !important;
 		font-size: 26px !important;
@@ -93,7 +98,7 @@ Stylesheet: Share Content Module Stylesheet
 
 @media only screen and (min-width: 1800px) {
 
-	#ssba a{
+	.ssba a{
 		width:46px !important;
 		height: 46px !important;
 		font-size: 26px !important;

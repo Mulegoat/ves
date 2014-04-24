@@ -41,11 +41,12 @@
 
 								//Return Posts for Blog
 								$args=array(
-								  'cat' =>1,
 								  'posts_per_page' => 1,
-								  'post_status' => 'publish',
+								  'post_status' => 'draft',
 								  'post__not_in' => array($this_post),
+								  'in_same_cat' => true,
 								  'order' => 'ASC',
+								  'orderby' => 'date',
 								  'caller_get_posts'=> 1
 								);
 
@@ -68,7 +69,6 @@
 														<h2 class="single-title"><a class="header-link" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 														<p><?php the_excerpt(); ?></p>
 														<p><a class="button" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">Read More ></a></p>
-
 										    		</header>
 										    	</div>
 									    	</div>

@@ -73,11 +73,6 @@ values are commented out on each line.
 }
 $zen-auto-include-item-base:false;
 
-.l-single-column{
-  max-width:700px;
-  margin:0 auto;
-}
-
 .l-block__1-3{
   @include zen-grid-item(3, 1);
   @include zen-clear();
