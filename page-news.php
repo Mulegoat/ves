@@ -56,10 +56,10 @@ Template Name: News Home
 											<header class="sixcol island">
 												<h2 class="h3"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 												<p><?php the_excerpt(); ?></p>
-
+												<p><a class="button" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">Read More ></a></p>
 											</header> <!-- end article header -->
 
-											<footer class="fourcol">
+											<footer class="sixcol">
 											</footer> <!-- end article footer -->
 
 										</div>

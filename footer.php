@@ -1,11 +1,11 @@
 
-			<footer class="pre-footer twelvecol box--theme2" role="contentinfo">
+			<footer class="pre-footer twelvecol box--theme6" role="contentinfo">
 				<div class="wrap">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-links') ) : ?> <?php endif; ?>
 				</div>
 			</footer>
 
-			<footer class="footer twelvecol box--theme3" role="contentinfo">
+			<footer class="footer twelvecol" role="contentinfo">
 				<div class="inner-footer clearfix">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('riba-logo') ) : ?> <?php endif; ?>
 				</div>
@@ -23,7 +23,6 @@
 		</div> <!-- end #container -->
 
 
-		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
 
         </body>
